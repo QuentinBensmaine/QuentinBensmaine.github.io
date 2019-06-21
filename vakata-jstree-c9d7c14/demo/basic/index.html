@@ -1,0 +1,3331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>jstree basic demos</title>
+	<style>
+		html {
+			margin: 0;
+			padding: 0;
+			font-size: 62.5%;
+		}
+
+		body {
+			max-width: 800px;
+			min-width: 300px;
+			margin: 0 auto;
+			padding: 20px 10px;
+			font-size: 14px;
+			font-size: 1.4em;
+		}
+
+		h1 {
+			font-size: 1.8em;
+		}
+
+		.demo {
+			overflow: auto;
+			border: 1px solid silver;
+			min-height: 100px;
+		}
+	</style>
+	<link rel="stylesheet" href="./../../dist/themes/default/style.min.css" />
+</head>
+
+<body>
+
+	<div id="yes"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./../../dist/jstree.min.js"></script>
+
+	<script>
+		$('#yes').jstree({
+			'core': {
+				'data': [
+					{
+						"text": "Secretary General",
+						"title": "",
+						"type": "group",
+						"children": [
+							{
+								"sam": "fbarrett",
+								"text": "BARRETT Frank, M.",
+								"icon": "users\generic.png",
+								"title": "Secretary General",
+								"type": "user",
+								"children": []
+							},
+							{
+								"sam": "gbeszlej",
+								"text": "BESZLEJ Gabriel, M.",
+								"title": "Deputy Secretary General",
+								"type": "user",
+								"children": []
+							},
+							{
+								"sam": "swoodard",
+								"text": "WOODARD Stephen, M.",
+								"title": "Deputy Secretary General",
+								"type": "user",
+								"children": []
+							}
+						]
+					},
+					{
+						"text": "Heads Of Unit",
+						"title": "",
+						"type": "group",
+						"children": [
+							{
+								"sam": "acepova",
+								"text": "CEPOVA Fourtoy, Mme",
+								"title": "Unit E",
+								"type": "user",
+								"children": []
+							},
+							{
+								"sam": "wdanecki",
+								"text": "DANECKI Wojciech, M.",
+								"title": "Unit D",
+								"type": "user",
+								"children": []
+							},
+							{
+								"sam": "jdejong",
+								"text": "DE JONG Jannes, M.",
+								"title": "Unit C",
+								"type": "user",
+								"children": []
+							},
+							{
+								"sam": "odoumbouya",
+								"text": "DOUMBOUYA Oumar, M.",
+								"title": "Internal Organisation & IT",
+								"type": "user",
+								"children": []
+							},
+							{
+								"sam": "ggoldsmith",
+								"text": "GOLDSMITH Gareth, M.",
+								"title": "Unit F",
+								"type": "user",
+								"children": []
+							},
+							{
+								"sam": "agulbe",
+								"text": "GULBE Ance, Mme",
+								"title": "Unit B",
+								"type": "user",
+								"children": []
+							},
+							{
+								"sam": "ggoldsmith",
+								"text": "GOLDSMITH Gareth, M.",
+								"title": "Press",
+								"type": "user",
+								"children": []
+							},
+							{
+								"sam": "jrejdych",
+								"text": "REJDYCH Joanna, Mme",
+								"title": "Unit A",
+								"type": "user",
+								"children": []
+							}
+						]
+					},
+					{
+						"text": "Staff",
+						"title": "",
+						"type": "group",
+						"children": [
+							{
+								"text": "Central Office",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "odoumbouya",
+										"text": "DOUMBOUYA Oumar, M.",
+										"title": "Head Of Unit",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "ebradikova",
+										"text": "BENJAMIN BRADIKOVA Eva, Mme",
+										"title": "Assistant SG M. BARRETT Frank",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "mkordula",
+										"text": "KORDULA Monika, Mme",
+										"title": "Assistant SG M. BARRETT Frank",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "kbrookfox",
+										"text": "BROOK-FOX Katherine, Mme",
+										"title": "Assistant SG M. BARRETT Frank",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "swild",
+										"text": "WILD Suzy, Mme",
+										"title": "Chairman's Office",
+										"type": "user",
+										"children": []
+									}
+								]
+							},
+							{
+								"text": "Assistant Deputy Secretary General",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "mwang",
+										"text": "WANG  Monika, Mme",
+										"title": "Assistant DSG M. BESZLEJ Gabriel",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "cbanteli",
+										"text": "BANTELI Christina, Mme",
+										"title": "Assistant DSG M. WOODARD Stephen",
+										"type": "user",
+										"children": []
+									}
+								]
+							},
+							{
+								"text": "Human Resources ",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "apiccarolo",
+										"text": "PICCAROLO Alessia, Mme",
+										"title": "Human Resources Officer",
+										"type": "user",
+										"children": []
+									}
+								]
+							},
+							{
+								"text": "Finance",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "jjguez",
+										"text": "GUEZ Jean-Jacques, M.",
+										"title": "Accountant",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "ejanus",
+										"text": "JANUS-RZASA Ewa, Mme",
+										"title": "Ex-ante Controller",
+										"type": "user",
+										"children": []
+									}
+								]
+							},
+							{
+								"text": "Information Technology",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "odoumbouya",
+										"text": "DOUMBOUYA Oumar, M.",
+										"title": "Head Of Unit",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "dsaldic",
+										"text": "SALDIC Dzafer, M.",
+										"title": "LSA, Web Development",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "jfouquet",
+										"text": "FOUQUET Julien, M.",
+										"title": "IT Support",
+										"type": "user",
+										"children": []
+									}
+								]
+							},
+							{
+								"text": "Parliamentary Activities",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"text": "Whips' Office, Voting lists Speaking time / Hemicycle",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "dboyd",
+												"text": "BOYD David, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "dbatt",
+												"text": "BATT David, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"text": "Parliamentary Bodies",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"text": "Conference of Presidents",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "fbarrett",
+												"text": "BARRETT Frank, M.",
+												"title": "Secretary General",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Parliament's Bureau",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "gbeszlej",
+												"text": "BESZLEJ Gabriel, M.",
+												"title": "Deputy Secretary General",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "swoodard",
+												"text": "WOODARD Stephen, M.",
+												"title": "Deputy Secretary General",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "College of Quaestors",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "osyska",
+												"text": "SYSKA Oliwia, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Conference of Committee Chairmen",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "swoodard",
+												"text": "WOODARD Stephen, M.",
+												"title": "Deputy Secretary General",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "wdanecki",
+												"text": "DANECKI Wojciech, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "casmith",
+												"text": "SMITH Cameron, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Conference of Delegation Chairmen",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "acepova",
+												"text": "CEPOVA Fourtoy, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "STOA Panel",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "ggoldsmith",
+												"text": "GOLDSMITH Gareth, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "amanzi",
+												"text": "MANZI Alberto, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Relations with National Parliaments",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "dbatt",
+												"text": "BATT David, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"text": "Press,Media and Communications Strategy",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "ggoldsmith",
+										"text": "GOLDSMITH Gareth, M.",
+										"title": "Head of Unit",
+										"type": "user",
+										"children": []
+									},
+									{
+										"text": "Unit Support, social media, publications and events",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "ebouchalova",
+												"text": "BOUCHALOVA Eva, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Group Spokesman",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "jkrelina",
+												"text": "KRELINA Jan, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Press Officer",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "crasmussen",
+												"text": "RASMUSSEN Christina, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "UK Delegation Press and Media",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "rotaylor",
+												"text": "TAYLOR Robert, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "cjsmith",
+												"text": "SMITH Cameron J., M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Polish Delegation Press and Media",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "kochman",
+												"text": "OCHMAN-KAMINSKA Katarzyna, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "malipinska",
+												"text": "LIPINSKA Marta, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "German Delegation Press and Media",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "mstrauss",
+												"text": "STRAUSS Michael, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Danish Delegation Press and Media",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "mlauridsen",
+												"text": "LAURIDSEN Martin Hjort, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Flemish Delegation Press and Media",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "yvanderveeren",
+												"text": "VANDERVEEREN Yannick, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Dutch Delegation Press and Media",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "mvandefliert",
+												"text": "VAN DE FLIERT Maarten, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Czech Delegation Press and Media",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "jkrelina",
+												"text": "KRELINA Jan, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Italian Delegation Press and Media",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "vmatano",
+												"text": "MATANO Vincenzo, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "abuffo",
+												"text": "BUFFO Anna Maria, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Latvian Delegation Press and Media",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "kbumeisters",
+												"text": "BUMEISTERS Karlis, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Lithuanian Delegation Press and Media",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "brogalski",
+												"text": "ROGALSKI Boguslaw, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Cypriot Delegation Press and Media",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "cmichaelidou",
+												"text": "MICHAELIDOU Charitini, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"text": "Internal Affairs Policies - Unit A",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "swoodard",
+										"text": "WOODARD Stephen, M.",
+										"title": "Deputy Secretary General",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "jrejdych",
+										"text": "REJDYCH Joanna, Mme.",
+										"title": "Head Of Unit",
+										"type": "user",
+										"children": []
+									},
+									{
+										"text": "BUDG - Budgets Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "kakaminski",
+												"text": "KAMINSKI Kacper, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "gmoore",
+												"text": "MOORE Gavin, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mschulze",
+												"text": "SCHULZE-ELVERT Martin, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "jstange",
+												"text": "STANGE Jan, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "jvanbrussel",
+												"text": "VAN BRUSSEL Jan, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "CONT - Budgetary Control Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "gmoore",
+												"text": "MOORE Gavin, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "gmarias",
+												"text": "MARIAS George-Orion, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "vmatano",
+												"text": "MATANO Vincenzo, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "jnietoperez",
+												"text": "NIETO PEREZ Javier, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "jvanbrussel",
+												"text": "VAN BRUSSEL Jan, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "kwrzesinska",
+												"text": "WRZESINSKA Kamila, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "AGRI - Agriculture Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "chealy",
+												"text": "HEALY Caroline, Mme.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mmajerczyk",
+												"text": "MAJERCZYK Magdalena, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "lreal",
+												"text": "REAL Laura, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "marizzo",
+												"text": "RIZZO Massimiliano, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "cvandijk",
+												"text": "VAN DIJK Christine, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "PECH - Fisheries Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "agulam",
+												"text": "GULAM LALIC Anita, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "chealy",
+												"text": "HEALY Caroline, Mme.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "osyska",
+												"text": "SYSKA Oliwia, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "ENVI - Environment Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "mbrachowicz",
+												"text": "BRACHOWICZ Maciej, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "pcassidy",
+												"text": "CASSIDY Patrick, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "rdarke",
+												"text": "DARKE Russell, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "sdouglas",
+												"text": "DOUGLAS-BATE samuel, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "rking",
+												"text": "KING Richard, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "marizzo",
+												"text": "RIZZO Massimiliano, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "sterzieva",
+												"text": "TERZIEVA Sofia, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "REGI - Regional Development Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "mbrko",
+												"text": "BRKO Mislava, M",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "sdouglas",
+												"text": "DOUGLAS-BATE samuel, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "vmatano",
+												"text": "MATANO Vincenzo, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "sterzieva",
+												"text": "TERZIEVA Sofia, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mwang",
+												"text": "WANG Monika, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"text": "Internal Affairs Policies - Unit B",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "swoodard",
+										"text": "WOODARD Stephen, M.",
+										"title": "Deputy Secretary General",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "agulbe",
+										"text": "GULBE Ance, Mme",
+										"title": "Head Of Unit",
+										"type": "user",
+										"children": []
+									},
+									{
+										"text": "IMCO - Internal Market & Consumer Protection Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "kbojczuk",
+												"text": "AFZAL Katarzyna, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "jdinga",
+												"text": "DINGA Jan, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "cdonlon",
+												"text": "DONLON Claire, Mme.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "casmith",
+												"text": "SMITH Cameron, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "smiozga",
+												"text": "MIOZGA Slawomir, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "ECON - Economic & Monetary Affairs Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "kbojczuk",
+												"text": "AFZAL Katarzyna, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "advreux",
+												"text": "DAVREUX Anna, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "lgilbert",
+												"text": "GILBERT Lindsay, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "ckimmerle",
+												"text": "KIMMERLE Christoph, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "smiozga",
+												"text": "MIOZGA Slawomir, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "lrochtus",
+												"text": "ROCHTUS Luc, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "PANA Special Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "lgilbert",
+												"text": "GILBERT Lindsay, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mhesse",
+												"text": "HESSE Martina, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "ckimmerle",
+												"text": "KIMMERLE Christoph, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "osyska",
+												"text": "SYSKA Oliwia, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "EMPL - Employment & Social Affairs Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "kkoscova",
+												"text": "KOSCOVA Karolina, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "amccourt",
+												"text": "McCOURT Ann-Marie, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "kwrzesinska",
+												"text": "WRZESINSKA Kamila, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "JURI - Legal Affairs Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "adimitrova",
+												"text": "DIMITROVA Antonia, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "lgilbert",
+												"text": "GILBERT Lindsay, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mhesse",
+												"text": "HESSE Martina, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mskrzypek",
+												"text": "SKRZYPEK Marcin, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "TRAN - Transport & Tourism Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "pcassidy",
+												"text": "CASSIDY Patrick, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "agulbe",
+												"text": "GULBE Ance, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mraym",
+												"text": "RAYM Maxim, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "jrejdych",
+												"text": "REJDYCH Joanna, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "jvanbrussel",
+												"text": "VAN BRUSSEL Jan, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"text": "Internal Affairs Policies - Unit C",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "swoodard",
+										"text": "WOODARD Stephen, M.",
+										"title": "Deputy Secretary General",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "jdejong",
+										"text": "DE JONG Jannes, M.",
+										"title": "Head of Unit",
+										"type": "user",
+										"children": []
+									},
+									{
+										"text": "LIBE - Civil liberties, Justice & Home Affairs Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "jdejong",
+												"text": "DE JONG Jannes, M.",
+												"title": "Head of Unit",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "sducher",
+												"text": "DUCHER Slawomir, M.",
+												"title": "Head of Unit",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "chrheinz",
+												"text": "HEINZ Christian, M.",
+												"title": "Head of Unit",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "pmoynan",
+												"text": "MOYNAN Paul, M.",
+												"title": "Head of Unit",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mmajerczyk",
+												"text": "MAJERCZYK Magdalena, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "jnietoperez",
+												"text": "NIETO PEREZ Javier, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mapawlik",
+												"text": "PAWLIK Marta, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "awaters",
+												"text": "WATERS Adam, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "FEMM - Womens' Rights & Gender Equality Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "zbalaz",
+												"text": "BALAZ Zlatko, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mbrachowicz",
+												"text": "BRACHOWICZ Maciej, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "rking",
+												"text": "KING Richard, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "kkoscova",
+												"text": "KOSCOVA Karolina, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "PETI - Petitions Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "mbrachowicz",
+												"text": "BISMPA Glykeria, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "kakaminski",
+												"text": "KAMINSKI Kacper, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "gmarias",
+												"text": "MARIAS George-Orion, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "CULT - Culture & Education Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "cbeaudouin",
+												"text": "BEAUDOUIN Christophe, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "adimitrova",
+												"text": "DIMITROVA Antonia, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mhesse",
+												"text": "HESSE Martina, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mkochanowski",
+												"text": "KOCHANOWSKI Mateusz, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "TERRORISM Special Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "jdejong",
+												"text": "DE JONG Jannes, M.",
+												"title": "Head of Unit",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "kakaminski",
+												"text": "KAMINSKI Kacper, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "jnietoperez",
+												"text": "NIETO PEREZ Javier, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "awaters",
+												"text": "WATERS Adam, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"text": "Unit F",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "ggoldsmith",
+										"text": "GOLDSMITH Gareth, M.",
+										"title": "Head of Unit",
+										"type": "user",
+										"children": []
+									},
+									{
+										"text": "ITRE - Industry, Research & Energy Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "gbalabanov",
+												"text": "BALABANOV Georgi, M..",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "whumilly",
+												"text": "D’HUMILLY DE CHEVILLY Witold, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "ggoldsmith",
+												"text": "GOLDSMITH Gareth, M.",
+												"title": "Head of Unit",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "thanus",
+												"text": "HANUS Tomas, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "chrheinz",
+												"text": "HEINZ Christian, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "amanzi",
+												"text": "MANZI Alberto, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mraym",
+												"text": "RAYM Maxim, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "lreal",
+												"text": "REAL Laura, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "AFCO - Constitutional Affairs Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "cbeaudouin",
+												"text": "BEAUDOUIN Christophe, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "challam",
+												"text": "HALLAM Chris, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "akeijzer",
+												"text": "KEIJZER Alla, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "osyska",
+												"text": "SYSKA Oliwia, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"text": "External Policies(Comprising Units D & E)",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "gbeszlej",
+										"text": "BESZLEJ Gabriel, M.",
+										"title": "Deputy Secretary General",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "wdanecki",
+										"text": "DANECKI Wojciech, M.",
+										"title": "Head of Unit",
+										"type": "user",
+										"children": []
+									},
+									{
+										"text": "AFET - Foreign Affairs Committee, DROI - Sub-Committee on Human Rights, SEDE - Sub-Committee on Security and Defence",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "ecoolegem",
+												"text": "COOLEGEM Elise, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "lbrusseau",
+												"text": "COX-BRUSSEAU Louis, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "wdanecki",
+												"text": "DANECKI Wojciech, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "sducher",
+												"text": "DUCHER Slawomir, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "agulam",
+												"text": "GULAM LALIC Anita (DROI), Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "rhazlewood",
+												"text": "HAZLEWOOD Richard, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mapawlik",
+												"text": "PAWLIK Marta, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "wvanluik",
+												"text": "VAN LUIK Walter, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "kzielke",
+												"text": "ZIELKE Krzysztof, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "NATO Parliamentary Assembly",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "kzielke",
+												"text": "ZIELKE Krzysztof, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Democracy Support and Election Coordination Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "wdanecki",
+												"text": "DANECKI Wojciech, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "smiozga",
+												"text": "MIOZGA Slawomir, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"text": "Unit E (including Inter-Parliamentary Delegations)",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "acepova",
+										"text": "CEPOVA-FOURTOY Andrea, Mme",
+										"title": "Head of Unit",
+										"type": "user",
+										"children": []
+									},
+									{
+										"text": "DEVE - Development Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "acepova",
+												"text": "CEPOVA-FOURTOY Andrea, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mmachaj",
+												"text": "MACHAJ-BRANCHU Maja, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "cmichaelidou",
+												"text": "MICHAELIDOU Charitini, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "INTA - International Trade Committee",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "acepova",
+												"text": "CEPOVA-FOURTOY Andrea, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "darodrigues",
+												"text": "DIAS RODRIGUES Daniela, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "fingelaere",
+												"text": "INGELAERE Frank, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mskrzypek",
+												"text": "SKRZYPEK Marcin, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Inter-Parliamentary Delegations And Joint Parliamentary Assemblies",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"text": "Europe",
+												"title": "",
+												"type": "group",
+												"children": [
+													{
+														"text": "Switzerland, Iceland, Norway and EEA",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "marizzo",
+																"text": "RIZZO Massimiliano, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "lreal",
+																"text": "REAL Laura, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Serbia",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "kbojczuk",
+																"text": "AFZAL Katarzyna, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Albania",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "jnietoperez",
+																"text": "NIETO PEREZ Javier, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Montenegro",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "sdouglas",
+																"text": "DOUGLAS-BATE samuel, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "FYROM",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "adimitrova",
+																"text": "DIMITROVA Antonia, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "mfilipov",
+																"text": "FILIPOV Martin, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Bosnia-Hercegovina and Kosovo",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "agulam",
+																"text": "GULAM LALIC Anita, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													}
+												]
+											},
+											{
+												"text": "Eastern Neighbourhood",
+												"title": "",
+												"type": "group",
+												"children": [
+													{
+														"text": "Team Organizer",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "wdanecki",
+																"text": "DANECKI Wojciech, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Armenia, EU-Azerbaijan and EU-Georgia",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "wdanecki",
+																"text": "DANECKI Wojciech, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "casmith",
+																"text": "SMITH Cameron, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Belarus",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "mbrachowicz",
+																"text": "BRACHOWICZ Maciej, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Kazakhstan, Kyrgyzstan and Uzbekistan and Delegations for relations with Tajikistan, Turkmenistan and Mongolia",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "fingelaere",
+																"text": "INGELAERE Frank, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "mmajerczyk",
+																"text": "MAJERCZYK Magdalena, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Moldova",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "mskrzypek",
+																"text": "SKRZYPEK Marcin, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "osyska",
+																"text": "SYSKA Oliwia, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Ukraine",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "wdanecki",
+																"text": "DANECKI Wojciech, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "fingelaere",
+																"text": "INGELAERE Frank, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Russia",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "wdanecki",
+																"text": "DANECKI Wojciech, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "mmajerczyk",
+																"text": "MAJERCZYK Magdalena, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "sterzieva",
+																"text": "TERZIEVA Sofia, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "EURONEST",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"text": "Political Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "wdanecki",
+																		"text": "DANECKI Wojciech, M.",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Economic Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "casmith",
+																		"text": "SMITH Cameron, M.",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Social Affairs Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "osyska",
+																		"text": "SYSKA Oliwia, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Energy Security Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "mbrachowicz",
+																		"text": "BRACHOWICZ Maciej, M.",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"text": "Southern Neighbourhood",
+												"title": "",
+												"type": "group",
+												"children": [
+													{
+														"text": "Team Organizer",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "vmatano",
+																"text": "MATANO Vincenzo, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Arab Peninsula",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "rking",
+																"text": "KING Richard, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Israel",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "zbalaz",
+																"text": "BALAZ Zlatko, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "ecoolegem",
+																"text": "COOLEGEM Elise, Mme.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Mashreq Countries",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "gbismpa",
+																"text": "BISMPA Glykeria, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "lbrusseau",
+																"text": "COX-BRUSSEAU Louis, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "gmarias",
+																"text": "MARIAS George-Orion, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Maghreb countries and the Arab Maghreb Union",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "lbrusseau",
+																"text": "COX-BRUSSEAU Louis, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "kkoskova",
+																"text": "KOSCOVA Karolina, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "vmatano",
+																"text": "MATANO Vincenzo, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Middle East Working Group",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "kkoskova",
+																"text": "KOSCOVA Karolina, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Palestinian Legislative Council",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "cdonlon",
+																"text": "DONLON Claire, Mme.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Turkey",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "jkrelina",
+																"text": "KRELINA Jan, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "wvanluik",
+																"text": "VAN LUIK Walter, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Turkish Cypriot Community Contact Group",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "jkrelina",
+																"text": "KRELINA Jan, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "wvanluik",
+																"text": "VAN LUIK Walter, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "EUROMED",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"text": "Political Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "kkoskova",
+																		"text": "KOSCOVA Karolina, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Economic Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "vmatano",
+																		"text": "MATANO Vincenzo, M.",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Cultural Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "kkoskova",
+																		"text": "KOSCOVA Karolina, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Energy Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "vmatano",
+																		"text": "MATANO Vincenzo, M.",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Women's Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "kkoskova",
+																		"text": "KOSCOVA Karolina, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"text": "Asia / Oceania",
+												"title": "",
+												"type": "group",
+												"children": [
+													{
+														"text": "Afghanistan",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "lreal",
+																"text": "REAL Laura, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "China",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "mraym",
+																"text": "RAYM Maxim, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "mwang",
+																"text": "WANG Monika, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "India",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "jdejong",
+																"text": "DE JONG Jannes, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Iran",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "ecoolegem",
+																"text": "COOLEGEM Elise, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Iraq",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "rhazlewood",
+																"text": "HAZLEWOOD Richard, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "kzielke",
+																"text": "ZIELKE Krzysztof, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Japan",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "agulbe",
+																"text": "GULBE Ance, Mme",
+																"title": "Unit B",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "kochman",
+																"text": "OCHMAN-KAMINSKA Katarzyna, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Korean Penisula",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "amccourt",
+																"text": "McCOURT Ann-Marie, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "South Asia",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "cscott",
+																"text": "SCOTT Caroline, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "South East Asia and ASEAN",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "kbojczuk",
+																"text": "AFZAL Katarzyna, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "rdarke",
+																"text": "DARKE Russell, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "lrochtus",
+																"text": "ROCHTUS Luc, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Australia and New Zealand",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "pcassidy",
+																"text": "CASSIDY Patrick, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "evavrekova",
+																"text": "VAVREKOVA Emilia, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													}
+												]
+											},
+											{
+												"text": "North America",
+												"title": "",
+												"type": "group",
+												"children": [
+													{
+														"text": "United States",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "rhazlewood",
+																"text": "HAZLEWOOD Richard, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "lrochtus",
+																"text": "ROCHTUS Luc, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "kzielke",
+																"text": "ZIELKE Krzysztof, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Canada",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "rdarke",
+																"text": "DARKE Russell, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Transatlatic Legislators Dialogue",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "kzielke",
+																"text": "ZIELKE Krzysztof, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													}
+												]
+											},
+											{
+												"text": "Latin America",
+												"title": "",
+												"type": "group",
+												"children": [
+													{
+														"text": "Team Organizer",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "lgilbert",
+																"text": "GILBERT Lindsay, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Andean Community",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "mbrachowicz",
+																"text": "BRACHOWICZ Maciej, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "lgilbert",
+																"text": "GILBERT Lindsay, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Brazil",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "lgilbert",
+																"text": "GILBERT Lindsay, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "mmachaj",
+																"text": "MACHAJ-BRANCHU Maja, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Central America",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "mmachaj",
+																"text": "MACHAJ-BRANCHU Maja, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Chile",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "jnietoperez",
+																"text": "NIETO PEREZ Javier, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Mercosur",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "lgilbert",
+																"text": "GILBERT Lindsay, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "mmachaj",
+																"text": "MACHAJ-BRANCHU Maja, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Mexico",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "lgilbert",
+																"text": "GILBERT Lindsay, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "kwrzesinska",
+																"text": "WRZESINSKA Kamila, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "EUROLAT",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"text": "Political Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "lgilbert",
+																		"text": "GILBERT Lindsay, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Economic Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "jnietoperez",
+																		"text": "NIETO PEREZ Javier, M.",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Social Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "mmachaj",
+																		"text": "MACHAJ-BRANCHU Maja, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Sustainable Development Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "mmachaj",
+																		"text": "MACHAJ-BRANCHU Maja, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															}
+														]
+													},
+													{
+														"text": "Cariforum",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "jrejdych",
+																"text": "REJDYCH Joanna, Mme",
+																"title": "",
+																"type": "user",
+																"children": []
+															},
+															{
+																"sam": "mskrzypek",
+																"text": "SKRZYPEK Marcin, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "ACP-EU",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"text": "Team Organizer",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "jrejdych",
+																		"text": "REJDYCH Joanna, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	},
+																	{
+																		"sam": "cmichaelidou",
+																		"text": "MICHAELIDOU Charitini, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Political Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "cmichaelidou",
+																		"text": "MICHAELIDOU Charitini, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	},
+																	{
+																		"sam": "malipinska",
+																		"text": "LIPINSKA Marta, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Economic Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "rking",
+																		"text": "KING Richard, M.",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															},
+															{
+																"text": "Social Committee",
+																"title": "",
+																"type": "group",
+																"children": [
+																	{
+																		"sam": "ggoldsmith",
+																		"text": "GOLDSMITH Gareth, M.",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	},
+																	{
+																		"sam": "cmichaelidou",
+																		"text": "MICHAELIDOU Charitini, Mme",
+																		"title": "",
+																		"type": "user",
+																		"children": []
+																	}
+																]
+															}
+														]
+													},
+													{
+														"text": "South Africa",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "dbatt",
+																"text": "BATT David, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													},
+													{
+														"text": "Panafrican Parliament",
+														"title": "",
+														"type": "group",
+														"children": [
+															{
+																"sam": "sducher",
+																"text": "DUCHER Slawomir, M.",
+																"title": "",
+																"type": "user",
+																"children": []
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"text": "Policy Development",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"text": "Reporting to",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "gbeszlej",
+												"text": "BESZLEJ Gabriel, M.",
+												"title": "Deputy Secretary General",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "swoodard",
+												"text": "WOODARD Stephen, M.",
+												"title": "Deputy Secretary General",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Team Organizer",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "xxx",
+												"text": "to be announced",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Better Regulation and Re-Shoring Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "amccourt",
+												"text": "McCOURT Ann-Marie, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Budget Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "jstange",
+												"text": "STANGE Jan, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Defence Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "rhazlewood",
+												"text": "HAZLEWOOD Richard, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "kzielke",
+												"text": "ZIELKE Krzysztof, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Demography, Intergenerational and Family Policies Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "wdanecki",
+												"text": "DANECKI Wojciech, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "osyska",
+												"text": "SYSKA Oliwia, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Digital Single Market Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "cdonlon",
+												"text": "DONLON Claire, Mme.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "casmith",
+												"text": "SMITH Cameron, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Customs Union Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "cdonlon",
+												"text": "DONLON Claire, Mme.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "casmith",
+												"text": "SMITH Cameron, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Eurozone Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "chrheinz",
+												"text": "HEINZ Christian, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Migration Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "mapawlik",
+												"text": "PAWLIK Marta, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Western Balkans Policy Proup",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "mfilipov",
+												"text": "FILIPOV Martin, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Institutional Reform Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "akeijzer",
+												"text": "KEIJZER Alla, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Religious Freedom Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "jdejong",
+												"text": "DE JONG Jannes, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "jrejdych",
+												"text": "REJDYCH Joanna, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Rural Economy Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "lreal",
+												"text": "REAL Laura, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Institutional Reform Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "akeijzermackiewicz",
+												"text": "KEIJZER Alla, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "SME & Industry Research Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "xxx",
+												"text": "tbc",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Subsidiarity and Localism",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "tbc",
+												"text": "tbc",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "T.T.I.P. Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "darodrigues",
+												"text": "DIAS RODRIGUES Daniela, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Wealth Creation Policy Group",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "acepova",
+												"text": "CEPOVA - FOURTOY Andrea, Mme",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									},
+									{
+										"text": "Political Research",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "challam",
+												"text": "HALLAM Chris, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "anermer",
+												"text": "NERMER Andrzej, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "brogalski",
+												"text": "ROGALSKI Boguslaw, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"text": "External Contacts",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"text": "European Political Parties, Foundations, Intenational Organisations",
+										"title": "",
+										"type": "group",
+										"children": [
+											{
+												"sam": "jdejong",
+												"text": "DE JONG Jannes, M.",
+												"title": "",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "mfilipov",
+												"text": "FILIPOV Martin, M.",
+												"title": "Team Organizer",
+												"type": "user",
+												"children": []
+											},
+											{
+												"sam": "ggoldsmith",
+												"text": "GOLDSMITH Gareth, M.",
+												"title": "Team Organizer",
+												"type": "user",
+												"children": []
+											}
+										]
+									}
+								]
+							},
+							{
+								"text": "Stagiaires",
+								"title": "",
+								"type": "group",
+								"children": [
+									{
+										"sam": "tchapman",
+										"text": "CHAPMAN Tom, M.",
+										"title": "",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "jmeaden",
+										"text": "MEADEN Joseph, M.",
+										"title": "",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "jstreatfeild",
+										"text": "STREATFEILD Jonathan, M.",
+										"title": "",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "tsoini",
+										"text": "SOINI Toivo, M.",
+										"title": "",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "drademacher",
+										"text": "RADEMACHER David, M.",
+										"title": "",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "ezumer",
+										"text": "ZUMER Eva, Mme",
+										"title": "",
+										"type": "user",
+										"children": []
+									},
+									{
+										"sam": "ascuncio",
+										"text": "SCUNCIO Alessandro, M.",
+										"title": "",
+										"type": "user",
+										"children": []
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+
+		});
+	</script>
+</body>
+
+</html>
